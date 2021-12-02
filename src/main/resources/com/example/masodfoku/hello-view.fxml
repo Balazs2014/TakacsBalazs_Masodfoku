@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.masodfoku.HelloController">
+    <rowConstraints>
+        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints prefWidth="50.0" />
+        <ColumnConstraints prefWidth="35.0" />
+        <ColumnConstraints prefWidth="50.0" />
+        <ColumnConstraints maxWidth="22.0" minWidth="18.0" prefWidth="22.0" />
+        <ColumnConstraints maxWidth="55.0" minWidth="53.0" prefWidth="53.0" />
+        <ColumnConstraints prefWidth="20.0" />
+    </columnConstraints>
+    <children>
+        <Spinner fx:id="" prefWidth="50.0" GridPane.columnIndex="0" />
+        <Label prefWidth="35.0" text="x^2 + " GridPane.columnIndex="1" />
+        <Spinner prefWidth="50.0" GridPane.columnIndex="2" />
+        <Label prefWidth="25.0" text="x + " GridPane.columnIndex="3" />
+        <Spinner prefWidth="50.0" GridPane.columnIndex="4" />
+        <Label prefWidth="20.0" text="= 0" GridPane.columnIndex="5" />
+        <Button text="Számol" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+        <Label GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+    </children>
+</GridPane>
