@@ -3,42 +3,40 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory?>
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2"
-          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.masodfoku.HelloController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.masodfoku.HelloController">
     <rowConstraints>
-        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0"/>
-        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0"/>
-        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0"/>
+        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
+        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" />
     </rowConstraints>
     <columnConstraints>
-        <ColumnConstraints maxWidth="60.0" minWidth="60.0" prefWidth="60.0"/>
-        <ColumnConstraints maxWidth="35.0" minWidth="35.0" prefWidth="35.0"/>
-        <ColumnConstraints maxWidth="60.0" minWidth="60.0" prefWidth="60.0"/>
-        <ColumnConstraints maxWidth="22.0" minWidth="22.0" prefWidth="22.0"/>
-        <ColumnConstraints maxWidth="60.0" minWidth="60.0" prefWidth="60.0"/>
-        <ColumnConstraints maxWidth="20.0" minWidth="20" prefWidth="20.0"/>
+        <ColumnConstraints maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+        <ColumnConstraints maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+        <ColumnConstraints maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+        <ColumnConstraints maxWidth="22.0" minWidth="22.0" prefWidth="22.0" />
+        <ColumnConstraints maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+        <ColumnConstraints maxWidth="20.0" minWidth="20" prefWidth="20.0" />
     </columnConstraints>
     <children>
-        <Spinner fx:id="bevitelA" prefWidth="60.0" GridPane.columnIndex="0" editable="true">
+        <Spinner fx:id="bevitelA" editable="true" prefWidth="60.0" GridPane.columnIndex="0">
             <valueFactory>
-                <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="0" max="999" min="-999"/>
+                <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="0" max="999" min="-999" />
             </valueFactory>
         </Spinner>
-        <Label prefWidth="35.0" text="x^2 + " GridPane.columnIndex="1"/>
-        <Spinner fx:id="bevitelB" prefWidth="60.0" GridPane.columnIndex="2" editable="true">
+        <Label prefWidth="35.0" text="x^2 + " GridPane.columnIndex="1" />
+        <Spinner fx:id="bevitelB" editable="true" prefWidth="60.0" GridPane.columnIndex="2">
             <valueFactory>
-                <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="0" max="999" min="-999"/>
+                <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="0" max="999" min="-999" />
             </valueFactory>
         </Spinner>
-        <Label prefWidth="25.0" text="x + " GridPane.columnIndex="3"/>
-        <Spinner fx:id="bevitelC" prefWidth="60.0" GridPane.columnIndex="4" editable="true">
+        <Label prefWidth="25.0" text="x + " GridPane.columnIndex="3" />
+        <Spinner fx:id="bevitelC" editable="true" prefWidth="60.0" GridPane.columnIndex="4">
             <valueFactory>
-                <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="0" max="999" min="-999"/>
+                <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="0" max="999" min="-999" />
             </valueFactory>
         </Spinner>
-        <Label prefWidth="20.0" text="= 0" GridPane.columnIndex="5"/>
-        <Button fx:id="btnSzamol" onAction="#clickSzamol" text="Számol" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="1"/>
-        <Label fx:id="lblEredmeny" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="2"/>
+        <Label prefWidth="20.0" text="= 0" GridPane.columnIndex="5" />
+        <Button fx:id="btnSzamol" onAction="#clickSzamol" text="Számol" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+        <Label fx:id="lblEredmeny" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="2" />
     </children>
 </GridPane>
